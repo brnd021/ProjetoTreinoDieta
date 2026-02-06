@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="header">
+        <h1 class="app-title">Gasto calórico</h1>
+        <p class="app-sub">Estimativa diária</p>
+    </div>
+
+    <div class="card form-card">
+        <label for="dias">Treinos por semana</label>
+        <div class="row-inline">
+            <label class="radio"><input type="radio" name="dias" value="0"> Sedentário</label>
+            <label class="radio"><input type="radio" name="dias" value="3"> 1-3</label>
+            <label class="radio"><input type="radio" name="dias" value="5"> 4-5</label>
+            <label class="radio"><input type="radio" name="dias" value="7"> 6-7</label>
+            <label class="radio"><input type="radio" name="dias" value="8"> Atleta</label>
+        </div>
+
+        <button id="gastoCal-btn" class="btn">Calcular</button>
+        <div id="resultadoCal" class="result">Aguardando os dados...</div>
+    </div>
+    <div class="side">
+        <div class="card">
+            <h3>Tabela de referência</h3>
+            <table class="bmi-table">
+                <thead>
+                    <tr><th>Categoria</th><th>Homens</th><th>Mulheres</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Sedentário</td><td>2.000-2.300 kcal</td><td>1.500-1.800 kcal</td></tr>
+                    <tr><td>Ativo leve</td><td>2.400-2.600 kcal</td><td>1.800-2.000 kcal</td></tr>
+                    <tr><td>Ativo moderado</td><td>2.700-2.900 kcal</td><td>2.000-2.200 kcal</td></tr>
+                    <tr><td>Ativo intenso</td><td>3.000-3.200 kcal</td><td>2.300-2.500 kcal</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

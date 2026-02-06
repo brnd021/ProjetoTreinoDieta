@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="header">
+    <h1 class="app-title">Calculadora de IMC</h1>
+    <p class="app-sub">Descubra seu índice de massa corporal e classificação</p>
+  </div>
+
+  <div class="card form-card">
+    <label for="peso">Peso (kg)</label>
+    <input type="number" id="peso" class="input" step="0.1" placeholder="Ex: 70.5">
+
+    <label for="altura">Altura (m)</label>
+    <input type="number" id="altura" class="input" step="0.01" placeholder="Ex: 1.75">
+
+    <label for="sexo">Sexo</label>
+    <div class="row-inline">
+      <label class="radio"><input type="radio" name="sexo" value="M"> Masculino</label>
+      <label class="radio"><input type="radio" name="sexo" value="F"> Feminino</label>
+    </div>
+
+    <label for="idade">Idade</label>
+    <input type="number" id="idade" class="input" min="1" >
+
+    <button id="imc" class="btn">Calcular IMC</button>
+    <div id="resultadoImc" class="result fade-in">Aguardando os dados...</div>
+  </div>
+  <div class="side">
+      <div class="card">
+        <h3>Tabela de referência (adultos)</h3>
+        <table class="bmi-table">
+          <thead>
+            <tr><th>Classificação</th><th>IMC (kg/m²)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Abaixo do peso</td><td>&lt; 18,5</td></tr>
+            <tr><td>Peso normal</td><td>18,5 – 24,9</td></tr>
+            <tr><td>Sobrepeso</td><td>25,0 – 29,9</td></tr>
+            <tr><td>Obesidade I</td><td>30,0 – 34,9</td></tr>
+            <tr><td>Obesidade II</td><td>35,0 – 39,9</td></tr>
+            <tr><td>Obesidade III</td><td>≥ 40,0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
