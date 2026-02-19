@@ -5,7 +5,7 @@ document.addEventListener('components:loaded', () => {
     const btnIMC = document.getElementById('imc');
     const resultadoIMC = document.getElementById('resultadoImc');
     
-    // if (!btnIMC) return;
+    if (!btnIMC) return;
 
     btnIMC.addEventListener('click', function(e) {
         e.preventDefault();
